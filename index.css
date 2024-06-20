@@ -1,0 +1,223 @@
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:"buycat";
+    src: url('/FONT/Buycat.ttf') ;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'buycat';
+    background: linear-gradient(rgb(0, 0, 0), rgb(6, 16, 48));
+}
+
+@keyframes customBounce {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.main-logo {
+    /* animation: customBounce 1.5s infinite; */
+}
+
+h1.about {
+    font-family: 'buycat';
+}
+
+h2.about {
+    font-family: 'buycat';
+}
+
+h3.about {
+    font-family: 'buycat';
+}
+
+h4.about-text {
+    font-family: 'Rubik Doodle Shadow';
+}
+
+p.about,
+p.tok,
+p.nft-text {
+    font-family: 'Rubik Bubbles';
+}
+
+div.about,
+.prog {
+    font-family: 'Rubik Bubbles';
+}
+
+li {
+    color: black;
+    font-family: 'Rubik Bubbles';
+}
+
+
+.btn-buy {
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #ffffff;
+}
+
+.hov {
+    fill: white;
+}
+
+#myBtn:hover .hov {
+    fill: #FBAB7E;
+
+}
+
+
+/* Custom Styles */
+.nft-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-card {
+    position: relative;
+}
+
+.nft-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nft-card:hover::before {
+    opacity: 0;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.block1 {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    background: linear-gradient(0deg, #000, #272727);
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 25px;
+    padding: 0;
+}
+
+.block1 img {
+    border-radius: 16px;
+}
+
+
+.block1:before,
+.block1:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+    border-radius: 16px;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block1:after {
+    filter: blur(50px);
+}
+
+/* .phase1 {
+    border-radius: 0px 70px 0px 70px;
+} */

@@ -1,0 +1,2 @@
+# ShibaNoodleCoin
+ 
